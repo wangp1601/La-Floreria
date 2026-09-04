@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#D45D79" />
+    <title>Flores Amarillas — La Florería Lechería</title>
+    <meta
+      name="description"
+      content="Catálogo de la colección Flores Amarillas de La Florería, Lechería. Elige tu arreglo y agenda tu pedido por WhatsApp."
+    />
+    <link rel="icon" type="image/png" href="img/isotipo-rosa.png" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <img
+        class="cabecera__logo"
+        src="img/logo-amarillo.png"
+        alt="La Florería"
+        width="890"
+        height="302"
+      />
+      <p class="cabecera__ciudad">Lechería</p>
+    </header>
+
+    <div class="damero" aria-hidden="true"></div>
+
+    <section class="portada">
+      <p class="portada__antetitulo">21 de septiembre</p>
+      <h1 class="portada__titulo">Flores<br />Amarillas</h1>
+      <p class="portada__texto">
+        Somos tus cómplices en cada ocasión especial. Estos son los arreglos
+        disponibles para regalar flores amarillas: elige el tuyo y agenda tu
+        pedido por WhatsApp.
+      </p>
+      <img
+        class="portada__margarita"
+        src="img/isotipo-rosa.png"
+        alt=""
+        width="256"
+        height="256"
+        aria-hidden="true"
+      />
+    </section>
+
+    <section class="escenario" aria-label="Colección en carrusel">
+      <h2 class="escenario__titulo">Nuestra colección</h2>
+
+      <div class="coverflow" id="coverflow">
+        <div class="coverflow__pista" id="pista"></div>
+        <button class="flecha flecha--izq" id="anterior" type="button" aria-label="Producto anterior">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <button class="flecha flecha--der" id="siguiente" type="button" aria-label="Producto siguiente">
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
+
+      <div class="ficha" id="ficha" aria-live="polite">
+        <p class="ficha__contador" id="contador"></p>
+        <h3 class="ficha__nombre" id="fichaNombre"></h3>
+        <p class="ficha__detalle" id="fichaDetalle"></p>
+        <p class="ficha__precio"><span class="precio__monto" id="fichaPrecio"></span></p>
+        <a
+          class="boton boton--amarillo"
+          id="fichaBoton"
+          href="https://api.whatsapp.com/send/?phone=584148025286&amp;text&amp;type=phone_number&amp;app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Agendar pedido</a
+        >
+      </div>
+
+      <div class="puntos" id="puntos" role="tablist" aria-label="Ir a un producto"></div>
+    </section>
+
+    <div class="damero" aria-hidden="true"></div>
+
+    <section class="listado" aria-label="Todos los productos">
+      <h2 class="listado__titulo">Todo el catálogo</h2>
+      <p class="listado__texto">Toca una foto para verla en grande.</p>
+      <div class="listado__grid" id="grid"></div>
+    </section>
+
+    <section class="cierre">
+      <h2 class="cierre__titulo">¿No sabes cuál elegir?</h2>
+      <p class="cierre__texto">
+        Escríbenos y armamos el arreglo contigo, a tu presupuesto y con la
+        dedicatoria que quieras.
+      </p>
+      <a
+        class="boton boton--amarillo"
+        id="whatsappGeneral"
+        href="https://api.whatsapp.com/send/?phone=584148025286&amp;text&amp;type=phone_number&amp;app_absent=0"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hablar por WhatsApp</a
+      >
+    </section>
+
+    <footer class="pie">
+      <img
+        class="pie__logo"
+        src="img/logo-rosa.png"
+        alt="La Florería"
+        width="890"
+        height="302"
+      />
+      <p class="pie__nota">Lechería · Pedidos y entregas por WhatsApp · +58 414-8025286</p>
+    </footer>
+
+    <script type="module" src="catalogo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,573 @@
+/* La Florería — catálogo Flores Amarillas.
+   Paleta de la Guía de Identidad Visual:
+   rosa 7635C #D45D79 · rosa 1205C #F9679F · nude 406C #E3D5CA · vino 1815C #9E2A2B.
+   El amarillo #F9E79F es el mismo del logotipo y de los aplicativos de la guía;
+   aquí lleva el peso de la colección de flores amarillas. */
+
+/* Fraunces (SIL Open Font License 1.1, ver fuentes/OFL.txt): display con
+   remates suaves, la que más se parece al lettering del logotipo. */
+@font-face {
+  font-family: "Fraunces";
+  src: url("fuentes/fraunces.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+:root {
+  --rosa: #d45d79;
+  --rosa-vivo: #f9679f;
+  --nude: #e3d5ca;
+  --vino: #9e2a2b;
+  --vino-hondo: #7b1f20;
+  --amarillo: #f9e79f;
+  --amarillo-suave: #fdf3cd;
+  --crema: #fffaf0;
+  --blanco: #fffdfb;
+  --tinta: #4a2226;
+  --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--amarillo-suave);
+  color: var(--tinta);
+  font-family: var(--sans);
+  font-size: 16px;
+  font-optical-sizing: auto;
+  line-height: 1.55;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Cabecera ---------- */
+
+.cabecera {
+  background: var(--rosa);
+  padding: 20px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecera__logo {
+  width: auto;
+  height: 46px;
+}
+
+.cabecera__ciudad {
+  margin: 0;
+  color: var(--amarillo);
+  font-size: 0.78rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+/* Damero de los aplicativos de marca, como separador. */
+.damero {
+  height: 28px;
+  background: conic-gradient(var(--vino) 0 25%, var(--nude) 0 50%) 0 0 / 28px 28px;
+}
+
+/* ---------- Portada ---------- */
+
+.portada {
+  position: relative;
+  overflow: hidden;
+  background: var(--amarillo);
+  padding: 60px 24px 64px;
+  text-align: center;
+}
+
+.portada__antetitulo {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--rosa);
+}
+
+.portada__titulo {
+  margin: 10px 0 18px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.9rem, 12vw, 5rem);
+  line-height: 0.96;
+  color: var(--vino);
+}
+
+.portada__texto {
+  position: relative;
+  margin: 0 auto;
+  max-width: 46ch;
+  color: #7a3b33;
+}
+
+.portada__margarita {
+  position: absolute;
+  width: clamp(150px, 30vw, 230px);
+  height: auto;
+  right: -60px;
+  bottom: -70px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+/* ---------- Carrusel 3D ---------- */
+
+.escenario {
+  background: radial-gradient(120% 110% at 50% 0%, #dc6c87 0%, var(--rosa) 32%, #a83346 72%, var(--vino) 100%);
+  padding: 48px 0 54px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.escenario__titulo {
+  margin: 0 0 26px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 6vw, 2.3rem);
+  color: var(--amarillo);
+}
+
+.coverflow {
+  position: relative;
+  height: clamp(320px, 78vw, 480px);
+  perspective: 1400px;
+  perspective-origin: 50% 45%;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.coverflow__pista {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+.diapo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: clamp(196px, 52vw, 290px);
+  aspect-ratio: 3 / 4;
+  margin: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--nude);
+  box-shadow: 0 24px 44px rgba(0, 0, 0, 0.34);
+  cursor: pointer;
+  will-change: transform;
+  transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.45s ease;
+}
+
+.diapo--arrastrando,
+.diapo--arrastrando .diapo__foto {
+  transition: none;
+}
+
+.diapo__foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Las tarjetas laterales se oscurecen para que la del centro mande. */
+.diapo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(74, 16, 24, 0.34);
+  opacity: 1;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+
+.diapo--activa::after {
+  opacity: 0;
+}
+
+.diapo--activa {
+  cursor: default;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45), 0 0 0 4px rgba(249, 231, 159, 0.9);
+}
+
+.diapo__pie {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 34px 16px 14px;
+  background: linear-gradient(to top, rgba(74, 16, 24, 0.9), rgba(74, 16, 24, 0));
+  color: var(--blanco);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.diapo__pie b {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--amarillo);
+}
+
+.diapo__etiqueta {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--rosa-vivo);
+  color: var(--blanco);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 6px 11px;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(249, 231, 159, 0.92);
+  color: var(--vino);
+  font-size: 2rem;
+  line-height: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.flecha:hover,
+.flecha:focus-visible {
+  background: var(--blanco);
+}
+
+.flecha--izq {
+  left: 12px;
+}
+
+.flecha--der {
+  right: 12px;
+}
+
+/* Ficha del producto activo */
+
+.ficha {
+  margin: 26px auto 0;
+  padding: 0 24px;
+  max-width: 460px;
+  color: var(--blanco);
+}
+
+.ficha__contador {
+  margin: 0 0 6px;
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--amarillo);
+  opacity: 0.85;
+}
+
+.ficha__nombre {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 6vw, 2.1rem);
+  line-height: 1.1;
+  color: var(--blanco);
+}
+
+.ficha__detalle {
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  color: rgba(255, 253, 251, 0.82);
+}
+
+.ficha__precio {
+  margin: 0 0 18px;
+}
+
+.puntos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 26px auto 0;
+  max-width: 420px;
+  padding: 0 24px;
+}
+
+.punto {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(249, 231, 159, 0.35);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.punto--activo {
+  background: var(--amarillo);
+  transform: scale(1.35);
+}
+
+/* ---------- Precio ---------- */
+
+.precio__monto {
+  display: inline-block;
+  background: var(--amarillo);
+  color: var(--vino);
+  font-family: var(--serif);
+  font-size: 1.9rem;
+  line-height: 1;
+  padding: 9px 18px 11px;
+  border-radius: 999px;
+  transform: rotate(-2deg);
+  box-shadow: 0 4px 0 rgba(122, 31, 32, 0.35);
+}
+
+/* ---------- Listado completo ---------- */
+
+.listado {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 52px 20px 60px;
+  text-align: center;
+}
+
+.listado__titulo {
+  margin: 0 0 4px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 6vw, 2.3rem);
+  color: var(--vino);
+}
+
+.listado__texto {
+  margin: 0 0 30px;
+  font-size: 0.9rem;
+  color: var(--rosa);
+}
+
+.listado__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 26px 20px;
+  text-align: left;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 26px rgba(158, 42, 43, 0.14);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(158, 42, 43, 0.22);
+}
+
+.tarjeta__foto {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--nude);
+  border: 0;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.tarjeta__foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta__cuerpo {
+  padding: 18px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tarjeta__titulo {
+  margin: 0 0 6px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.15;
+  color: var(--vino);
+}
+
+.tarjeta__detalle {
+  margin: 0 0 16px;
+  font-size: 0.88rem;
+  color: #7a4a50;
+}
+
+.tarjeta__precio {
+  margin: auto 0 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.tarjeta .precio__monto {
+  font-size: 1.7rem;
+  box-shadow: 0 4px 0 rgba(158, 42, 43, 0.18);
+}
+
+.precio__nota {
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rosa);
+}
+
+/* ---------- Marco cuando aún no hay foto ---------- */
+
+.sinfoto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sinfoto img {
+  width: 34%;
+  height: auto;
+  max-width: 90px;
+  opacity: 0.5;
+}
+
+.sinfoto span {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  color: var(--vino);
+  opacity: 0.7;
+}
+
+/* ---------- Botones ---------- */
+
+.boton {
+  display: block;
+  text-align: center;
+  background: var(--rosa);
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.06em;
+  padding: 14px 18px;
+  border-radius: 999px;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.boton:hover,
+.boton:focus-visible {
+  background: var(--vino);
+}
+
+.boton--amarillo {
+  display: inline-block;
+  background: var(--amarillo);
+  color: var(--vino);
+  padding: 15px 36px;
+}
+
+.boton--amarillo:hover,
+.boton--amarillo:focus-visible {
+  background: var(--blanco);
+  color: var(--vino);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--amarillo);
+  outline-offset: 3px;
+}
+
+.listado a:focus-visible,
+.listado button:focus-visible {
+  outline-color: var(--vino);
+}
+
+/* ---------- Cierre y pie ---------- */
+
+.cierre {
+  background: var(--rosa);
+  color: var(--blanco);
+  text-align: center;
+  padding: 52px 24px 56px;
+}
+
+.cierre__titulo {
+  margin: 0 0 10px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.8rem, 6vw, 2.4rem);
+}
+
+.cierre__texto {
+  margin: 0 auto 26px;
+  max-width: 40ch;
+}
+
+.pie {
+  background: var(--amarillo);
+  text-align: center;
+  padding: 34px 24px 40px;
+}
+
+.pie__logo {
+  height: 40px;
+  width: auto;
+  margin: 0 auto 10px;
+}
+
+.pie__nota {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--vino);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diapo,
+  .tarjeta {
+    transition: none;
+  }
+  .tarjeta:hover {
+    transform: none;
+  }
+}
