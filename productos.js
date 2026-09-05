@@ -167,10 +167,12 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Combo Desayuno Floral',
-    precio: '$60',
-    detalle: 'Desayuno sorpresa acompañado de un ramo de flores amarillas.',
-    foto: 'combo-desayuno.jpg',
+    nombre: 'Minibouquet de margaritas amarillas',
+    precio: '$15',
+    detalle:
+      'Un tierno minibouquet de margaritas amarillas y delicado follaje. ' +
+      'Envuelto en papel kraft.',
+    foto: 'minibouquet-margaritas.jpg',
     etiqueta: '',
   },
 ];
