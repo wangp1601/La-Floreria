@@ -125,10 +125,13 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Ramo Amarillo y Blanco',
-    precio: '$28',
-    detalle: 'Rosas amarillas con astromelias blancas y eucalipto.',
-    foto: 'ramo-amarillo-blanco.jpg',
+    nombre: 'Bouquet de 10 girasoles',
+    precio: '$70',
+    detalle:
+      '10 imponentes girasoles acompañados de delicado follaje, envueltos ' +
+      'en papel premium. Un arreglo majestuoso, voluminoso y lleno de luz, ' +
+      'diseñado para dejar una impresión imborrable.',
+    foto: 'bouquet-10-girasoles.jpg',
     etiqueta: '',
   },
   {
