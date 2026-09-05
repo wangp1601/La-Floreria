@@ -54,10 +54,15 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Ramo Amarillo Clásico',
-    precio: '$30',
-    detalle: 'Doce rosas amarillas envueltas a mano con lazo de seda.',
-    foto: 'ramo-amarillo-clasico.jpg',
+    nombre: 'Bouquet de 12 rosas amarillas',
+    precio: '$45',
+    detalle:
+      'Un deslumbrante arreglo de 12 rosas amarillas, bellamente ' +
+      'contrastadas con un delicado follaje blanco. Envuelto en un elegante ' +
+      'papel claro con detalles en malla que resaltan su luz y ' +
+      'sofisticación, es un ramo radiante que enamora a primera vista. ' +
+      '¡El obsequio irresistible que querrás llevarte de inmediato!',
+    foto: 'bouquet-12-rosas.jpg',
     etiqueta: '',
   },
   {
