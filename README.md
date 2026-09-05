@@ -38,6 +38,11 @@ productos.
 Un producto sin foto muestra el marco "Próximamente" con la margarita de la
 marca, así que la página nunca se ve rota.
 
+**Al cambiar una foto por otra:** si el archivo nuevo se llama igual que el
+viejo, los navegadores y el servidor pueden seguir mostrando el anterior hasta
+una hora. Para que el cambio se vea al instante, guardar la foto nueva con otro
+nombre (por ejemplo `ramo-girasoles-2.jpg`) y actualizar el campo `foto`.
+
 ## Botón "Agendar pedido"
 
 Cada botón abre WhatsApp al **+58 414-8025286** con el mensaje ya escrito,

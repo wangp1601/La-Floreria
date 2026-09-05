@@ -88,7 +88,7 @@ export const productos = [
       'Un hermoso arreglo de cinco gerberas amarillas acompañadas de ' +
       'follaje, envuelto elegantemente en papel kraft con un lazo a juego. ' +
       'Incluye tarjeta.',
-    foto: 'bouquet-5-gerberas.jpg',
+    foto: 'bouquet-5-gerberas-v2.jpg',
     etiqueta: '',
   },
   {
