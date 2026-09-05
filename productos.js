@@ -61,6 +61,16 @@ export const productos = [
     etiqueta: '',
   },
   {
+    nombre: 'Bouquet variado de flores amarillas',
+    precio: '$25',
+    detalle:
+      'Rosas amarillas, una gerbera, clavel y flores silvestres sobre una ' +
+      'cama de follaje, envueltos en papel kraft con blonda. Incluye ' +
+      'tarjeta para tu dedicatoria.',
+    foto: 'bouquet-variado-amarillas.jpg',
+    etiqueta: '',
+  },
+  {
     nombre: 'Bouquet de 4 girasoles arreglados',
     precio: '$30',
     detalle:
