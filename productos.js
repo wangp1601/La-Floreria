@@ -85,10 +85,12 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Arreglo en Jarrón',
-    precio: '$45',
-    detalle: 'Composición amarilla lista para colocar, en jarrón de vidrio.',
-    foto: 'arreglo-jarron.jpg',
+    nombre: 'Flores en jarrón',
+    precio: '$40',
+    detalle:
+      'Un arreglo de girasoles, hortensias y flores amarillas variadas ' +
+      'acompañadas de follaje, presentado en un elegante jarrón de vidrio.',
+    foto: 'flores-en-jarron.jpg',
     etiqueta: '',
   },
   {
