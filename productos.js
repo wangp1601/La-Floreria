@@ -86,11 +86,15 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Combo Flores + Globo',
-    precio: '$38',
-    detalle: 'Ramo amarillo, globo de flores amarillas y tarjeta escrita a mano.',
-    foto: 'combo-globo.jpg',
-    etiqueta: 'Nuevo',
+    nombre: 'Bouquet de 7 girasoles',
+    precio: '$50',
+    detalle:
+      '7 radiantes girasoles con hermoso follaje, envueltos en un elegante ' +
+      'papel negro que hace explotar todo su color. Incluye tarjeta ' +
+      'especial. ¡Un contraste cautivador y lleno de luz, el detalle ideal ' +
+      'para sorprender!',
+    foto: 'bouquet-7-girasoles.jpg',
+    etiqueta: '',
   },
   {
     nombre: 'Bouquet de flores amarillas variadas',
