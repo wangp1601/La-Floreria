@@ -61,6 +61,17 @@ export const productos = [
     etiqueta: '',
   },
   {
+    nombre: 'Minibouquet de Girasol y Rosas',
+    precio: '$20',
+    detalle:
+      'Un encantador detalle que resalta un radiante girasol central ' +
+      'acompañado de dos elegantes rosas blancas y delicado follaje. ' +
+      'Envuelto en hermosos tonos cálidos con un vibrante lazo amarillo e ' +
+      'incluye una tarjeta.',
+    foto: 'minibouquet-girasol-rosas.jpg',
+    etiqueta: '',
+  },
+  {
     nombre: 'Bouquet variado de flores amarillas',
     precio: '$25',
     detalle:
