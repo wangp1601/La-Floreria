@@ -16,6 +16,15 @@
  */
 export const productos = [
   {
+    nombre: '1 girasol arreglado',
+    precio: '$10',
+    detalle:
+      'Un imponente girasol acompañado de follaje, envuelto elegantemente en ' +
+      'papel kraft. Un detalle clásico.',
+    foto: 'girasol-arreglado.jpg',
+    etiqueta: '',
+  },
+  {
     nombre: 'Ramo de Girasoles',
     precio: '$25',
     detalle: 'Girasoles frescos con follaje de temporada y papel de la casa.',
@@ -41,13 +50,6 @@ export const productos = [
     precio: '$20',
     detalle: 'Margaritas, solidago y gerberas amarillas en estilo silvestre.',
     foto: 'ramo-campestre.jpg',
-    etiqueta: '',
-  },
-  {
-    nombre: 'Girasol Solitario',
-    precio: '$12',
-    detalle: 'Un girasol solo, envuelto en papel kraft con cinta de la marca.',
-    foto: 'girasol-solitario.jpg',
     etiqueta: '',
   },
   {
