@@ -156,11 +156,15 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Ramo XL 24 Rosas',
-    precio: '$65',
-    detalle: 'Veinticuatro rosas amarillas para una declaración en grande.',
-    foto: 'ramo-xl-24.jpg',
-    etiqueta: 'Edición especial',
+    nombre: 'Bouquet Encanto',
+    precio: '$30',
+    detalle:
+      'Un hermoso arreglo mixto que combina vibrantes rosas en tonos ' +
+      'cálidos, flores crema, toques de hortensia y delicados detalles ' +
+      'silvestres. Envuelto en papel kraft con sutiles transparencias de ' +
+      'mariposas y encaje, incluye una hermosa tarjeta para tu dedicatoria.',
+    foto: 'bouquet-encanto.jpg',
+    etiqueta: '',
   },
   {
     nombre: 'Combo Desayuno Floral',
