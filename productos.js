@@ -64,10 +64,13 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Ramo Campestre',
-    precio: '$20',
-    detalle: 'Margaritas, solidago y gerberas amarillas en estilo silvestre.',
-    foto: 'ramo-campestre.jpg',
+    nombre: 'Bouquet de 5 gerberas amarillas',
+    precio: '$30',
+    detalle:
+      'Un hermoso arreglo de cinco gerberas amarillas acompañadas de ' +
+      'follaje, envuelto elegantemente en papel kraft con un lazo a juego. ' +
+      'Incluye tarjeta.',
+    foto: 'bouquet-5-gerberas.jpg',
     etiqueta: '',
   },
   {
