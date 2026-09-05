@@ -577,7 +577,9 @@ button:focus-visible {
 }
 
 .pie__mapa {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 18px;
   padding: 11px 22px;
   border-radius: 999px;
@@ -592,6 +594,10 @@ button:focus-visible {
 .pie__mapa:hover,
 .pie__mapa:focus-visible {
   background: var(--vino);
+}
+
+.pie__pin {
+  flex: none;
 }
 
 .pie__nota {
