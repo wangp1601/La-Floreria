@@ -25,6 +25,15 @@ export const productos = [
     etiqueta: '',
   },
   {
+    nombre: 'Mini bouquet 1 Rosa Amarilla Arreglada',
+    precio: '$8',
+    detalle:
+      'Pequeño y coqueto, ideal para sorprender en ese día especial, ' +
+      'acompañado de 1 rosa amarilla y follaje.',
+    foto: 'mini-bouquet-rosa-amarilla.jpg',
+    etiqueta: '',
+  },
+  {
     nombre: 'Ramo de Girasoles',
     precio: '$25',
     detalle: 'Girasoles frescos con follaje de temporada y papel de la casa.',
@@ -92,13 +101,6 @@ export const productos = [
     precio: '$42',
     detalle: 'Tres girasoles con caja de bombones surtidos.',
     foto: 'girasoles-chocolates.jpg',
-    etiqueta: '',
-  },
-  {
-    nombre: 'Mini Ramo Detalle',
-    precio: '$10',
-    detalle: 'Pequeño y coqueto, ideal para sorprender sin ocasión.',
-    foto: 'mini-ramo.jpg',
     etiqueta: '',
   },
   {
