@@ -145,10 +145,14 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Canasta Primavera',
-    precio: '$50',
-    detalle: 'Canasta de mimbre con flores amarillas de temporada.',
-    foto: 'canasta-primavera.jpg',
+    nombre: 'Bouquet Corazón amarillo',
+    precio: '$120',
+    detalle:
+      'Un espectacular arreglo en forma de corazón con rosas amarillas. En ' +
+      'su interior, una hermosa cama de delicado follaje hace resaltar tres ' +
+      'encantadoras gerberas en tonos cálidos. Presentado en un exclusivo ' +
+      'envoltorio con bordes festoneados.',
+    foto: 'bouquet-corazon-amarillo.jpg',
     etiqueta: '',
   },
   {
