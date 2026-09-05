@@ -78,10 +78,13 @@ export const productos = [
     etiqueta: 'Nuevo',
   },
   {
-    nombre: 'Bouquet Deluxe',
-    precio: '$55',
-    detalle: 'Girasoles, rosas y lisianthus amarillos en formato XL.',
-    foto: 'bouquet-deluxe.jpg',
+    nombre: 'Bouquet de flores amarillas variadas',
+    precio: '$60',
+    detalle:
+      'Un voluminoso arreglo de rosas amarillas, hortensias, claveles y ' +
+      'flores variadas en tonos cálidos, envuelto elegantemente en papel ' +
+      'kraft con un lazo a juego y una tarjeta.',
+    foto: 'bouquet-variado.jpg',
     etiqueta: '',
   },
   {
