@@ -16,15 +16,6 @@
  */
 export const productos = [
   {
-    nombre: '1 girasol arreglado',
-    precio: '$10',
-    detalle:
-      'Un imponente girasol acompañado de follaje, envuelto elegantemente en ' +
-      'papel kraft. Un detalle clásico.',
-    foto: 'girasol-arreglado.jpg',
-    etiqueta: '',
-  },
-  {
     nombre: 'Mini bouquet 1 Rosa Amarilla Arreglada',
     precio: '$8',
     detalle:
@@ -34,12 +25,39 @@ export const productos = [
     etiqueta: '',
   },
   {
+    nombre: '1 girasol arreglado',
+    precio: '$10',
+    detalle:
+      'Un imponente girasol acompañado de follaje, envuelto elegantemente en ' +
+      'papel kraft. Un detalle clásico.',
+    foto: 'girasol-arreglado.jpg',
+    etiqueta: '',
+  },
+  {
     nombre: '1 gerbera amarilla arreglada',
     precio: '$10',
     detalle:
       'Una vibrante gerbera amarilla acompañada de un delicado follaje, ' +
       'envuelta elegantemente en papel kraft. Un detalle clásico y especial.',
     foto: 'gerbera-arreglada.jpg',
+    etiqueta: '',
+  },
+  {
+    nombre: 'Bouquet de mini girasoles',
+    precio: '$15',
+    detalle:
+      'Un hermoso bouquet de mini girasoles acompañados de un delicado ' +
+      'follaje, envuelto elegantemente en papel kraft.',
+    foto: 'bouquet-mini-girasoles.jpg',
+    etiqueta: '',
+  },
+  {
+    nombre: 'Minibouquet de margaritas amarillas',
+    precio: '$15',
+    detalle:
+      'Un tierno minibouquet de margaritas amarillas y delicado follaje. ' +
+      'Envuelto en papel kraft.',
+    foto: 'minibouquet-margaritas.jpg',
     etiqueta: '',
   },
   {
@@ -54,6 +72,36 @@ export const productos = [
     etiqueta: '',
   },
   {
+    nombre: 'Bouquet de 5 gerberas amarillas',
+    precio: '$30',
+    detalle:
+      'Un hermoso arreglo de cinco gerberas amarillas acompañadas de ' +
+      'follaje, envuelto elegantemente en papel kraft con un lazo a juego. ' +
+      'Incluye tarjeta.',
+    foto: 'bouquet-5-gerberas.jpg',
+    etiqueta: '',
+  },
+  {
+    nombre: 'Bouquet Encanto',
+    precio: '$30',
+    detalle:
+      'Un hermoso arreglo mixto que combina vibrantes rosas en tonos ' +
+      'cálidos, flores crema, toques de hortensia y delicados detalles ' +
+      'silvestres. Envuelto en papel kraft con sutiles transparencias de ' +
+      'mariposas y encaje, incluye una hermosa tarjeta para tu dedicatoria.',
+    foto: 'bouquet-encanto.jpg',
+    etiqueta: '',
+  },
+  {
+    nombre: 'Flores en jarrón',
+    precio: '$40',
+    detalle:
+      'Un arreglo de girasoles, hortensias y flores amarillas variadas ' +
+      'acompañadas de follaje, presentado en un elegante jarrón de vidrio.',
+    foto: 'flores-en-jarron.jpg',
+    etiqueta: '',
+  },
+  {
     nombre: 'Bouquet de 12 rosas amarillas',
     precio: '$45',
     detalle:
@@ -63,26 +111,6 @@ export const productos = [
       'sofisticación, es un ramo radiante que enamora a primera vista. ' +
       '¡El obsequio irresistible que querrás llevarte de inmediato!',
     foto: 'bouquet-12-rosas.jpg',
-    etiqueta: '',
-  },
-  {
-    nombre: 'Box Amarillo — Arreglo de base de girasoles',
-    precio: '$150',
-    detalle:
-      'Un espectacular arreglo de girasoles con toques delicados de ' +
-      'follaje. Presentado en una elegante base blanca, es un diseño ' +
-      'imponente y lleno de vida.',
-    foto: 'box-amarillo-girasoles.jpg',
-    etiqueta: '',
-  },
-  {
-    nombre: 'Bouquet de 5 gerberas amarillas',
-    precio: '$30',
-    detalle:
-      'Un hermoso arreglo de cinco gerberas amarillas acompañadas de ' +
-      'follaje, envuelto elegantemente en papel kraft con un lazo a juego. ' +
-      'Incluye tarjeta.',
-    foto: 'bouquet-5-gerberas.jpg',
     etiqueta: '',
   },
   {
@@ -107,21 +135,12 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Flores en jarrón',
-    precio: '$40',
+    nombre: 'Bouquet Mariposa',
+    precio: '$60',
     detalle:
-      'Un arreglo de girasoles, hortensias y flores amarillas variadas ' +
-      'acompañadas de follaje, presentado en un elegante jarrón de vidrio.',
-    foto: 'flores-en-jarron.jpg',
-    etiqueta: '',
-  },
-  {
-    nombre: 'Bouquet de mini girasoles',
-    precio: '$15',
-    detalle:
-      'Un hermoso bouquet de mini girasoles acompañados de un delicado ' +
-      'follaje, envuelto elegantemente en papel kraft.',
-    foto: 'bouquet-mini-girasoles.jpg',
+      'Un espectacular mix de rosas amarillas y un imponente girasol ' +
+      'central, coronado con exclusivas alas de mariposa y follaje.',
+    foto: 'bouquet-mariposa.jpg',
     etiqueta: '',
   },
   {
@@ -136,15 +155,6 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Bouquet Mariposa',
-    precio: '$60',
-    detalle:
-      'Un espectacular mix de rosas amarillas y un imponente girasol ' +
-      'central, coronado con exclusivas alas de mariposa y follaje.',
-    foto: 'bouquet-mariposa.jpg',
-    etiqueta: '',
-  },
-  {
     nombre: 'Bouquet Corazón amarillo',
     precio: '$120',
     detalle:
@@ -156,23 +166,13 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Bouquet Encanto',
-    precio: '$30',
+    nombre: 'Box Amarillo — Arreglo de base de girasoles',
+    precio: '$150',
     detalle:
-      'Un hermoso arreglo mixto que combina vibrantes rosas en tonos ' +
-      'cálidos, flores crema, toques de hortensia y delicados detalles ' +
-      'silvestres. Envuelto en papel kraft con sutiles transparencias de ' +
-      'mariposas y encaje, incluye una hermosa tarjeta para tu dedicatoria.',
-    foto: 'bouquet-encanto.jpg',
-    etiqueta: '',
-  },
-  {
-    nombre: 'Minibouquet de margaritas amarillas',
-    precio: '$15',
-    detalle:
-      'Un tierno minibouquet de margaritas amarillas y delicado follaje. ' +
-      'Envuelto en papel kraft.',
-    foto: 'minibouquet-margaritas.jpg',
+      'Un espectacular arreglo de girasoles con toques delicados de ' +
+      'follaje. Presentado en una elegante base blanca, es un diseño ' +
+      'imponente y lleno de vida.',
+    foto: 'box-amarillo-girasoles.jpg',
     etiqueta: '',
   },
 ];
