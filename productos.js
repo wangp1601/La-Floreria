@@ -34,6 +34,15 @@ export const productos = [
     etiqueta: '',
   },
   {
+    nombre: '1 gerbera amarilla arreglada',
+    precio: '$10',
+    detalle:
+      'Una vibrante gerbera amarilla acompañada de un delicado follaje, ' +
+      'envuelta elegantemente en papel kraft. Un detalle clásico y especial.',
+    foto: 'gerbera-arreglada.jpg',
+    etiqueta: '',
+  },
+  {
     nombre: 'Ramo de Girasoles',
     precio: '$25',
     detalle: 'Girasoles frescos con follaje de temporada y papel de la casa.',
