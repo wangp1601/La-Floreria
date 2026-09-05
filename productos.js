@@ -92,10 +92,12 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Caja Corazón',
-    precio: '$40',
-    detalle: 'Corazón de rosas amarillas en caja rosada de la marca.',
-    foto: 'caja-corazon.jpg',
+    nombre: 'Bouquet de mini girasoles',
+    precio: '$15',
+    detalle:
+      'Un hermoso bouquet de mini girasoles acompañados de un delicado ' +
+      'follaje, envuelto elegantemente en papel kraft.',
+    foto: 'bouquet-mini-girasoles.jpg',
     etiqueta: '',
   },
   {
