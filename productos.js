@@ -66,10 +66,13 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Box Amarillo',
-    precio: '$35',
-    detalle: 'Caja sombrerera vino con rosas y gerberas amarillas.',
-    foto: 'box-amarillo.jpg',
+    nombre: 'Box Amarillo — Arreglo de base de girasoles',
+    precio: '$150',
+    detalle:
+      'Un espectacular arreglo de girasoles con toques delicados de ' +
+      'follaje. Presentado en una elegante base blanca, es un diseño ' +
+      'imponente y lleno de vida.',
+    foto: 'box-amarillo-girasoles.jpg',
     etiqueta: '',
   },
   {
