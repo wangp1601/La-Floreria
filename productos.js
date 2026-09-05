@@ -43,11 +43,15 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Ramo de Girasoles',
-    precio: '$25',
-    detalle: 'Girasoles frescos con follaje de temporada y papel de la casa.',
-    foto: 'ramo-girasoles.jpg',
-    etiqueta: 'Más pedido',
+    nombre: 'Bouquet de 4 girasoles arreglados',
+    precio: '$30',
+    detalle:
+      'Cuatro girasoles frescos con toques de delicado follaje, envueltos ' +
+      'en un vibrante papel amarillo y contrastados con un elegante moño ' +
+      'negro. Un arreglo lleno de luz y energía, diseñado para robar ' +
+      'miradas y garantizar una sonrisa.',
+    foto: 'bouquet-4-girasoles.jpg',
+    etiqueta: '',
   },
   {
     nombre: 'Ramo Amarillo Clásico',
