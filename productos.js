@@ -136,10 +136,12 @@ export const productos = [
     etiqueta: '',
   },
   {
-    nombre: 'Girasoles + Chocolates',
-    precio: '$42',
-    detalle: 'Tres girasoles con caja de bombones surtidos.',
-    foto: 'girasoles-chocolates.jpg',
+    nombre: 'Bouquet Mariposa',
+    precio: '$60',
+    detalle:
+      'Un espectacular mix de rosas amarillas y un imponente girasol ' +
+      'central, coronado con exclusivas alas de mariposa y follaje.',
+    foto: 'bouquet-mariposa.jpg',
     etiqueta: '',
   },
   {
